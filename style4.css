@@ -1,0 +1,71 @@
+#container{
+position: relative;
+//position: absolute;
+margin:auto;
+height:470px;
+width:300px;
+border-radius:50px;
+}
+
+
+#card{
+//position:absolute;
+margin:auto;
+position:relative;
+height:90%;
+width:90%;
+border-radius:50px;
+transition: 0.8s ease ;
+}
+
+#Marcusimg{
+position: absolute;
+z-index:-2;
+border-radius:50px;
+height:100%;
+width:100%;
+filter:blur(5px);
+transition: 0.8s ease ;
+}
+
+#overlay{
+position: absolute;
+z-index:-1;
+border-radius:50px;
+height:100%;
+width:100%;
+opacity:0;
+background-image: linear-gradient(#00000000 , #000000ff);
+transition: 0.8s ease ;
+}
+
+#text{
+position: absolute;
+text-align:center;
+bottom:0px;
+font-size:70px;
+width:100%;
+color: #000000;
+transition: 0.8s ease ;
+}
+
+#card:hover{
+height:100%;
+width:100%;
+transition: 0.8s ease ;
+}
+
+#card:hover #Marcusimg{
+filter:blur(0);
+transition: 0.8s ease ;
+}
+
+#card:hover #overlay{
+opacity:1;
+transition: 0.8s ease ;
+}
+
+#card:hover #text{
+color:#ffffff77;
+transition: 0.8s ease ;
+}
